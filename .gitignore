@@ -1,0 +1,6 @@
+dist/
+tmp/
+*.log
+__pycache__/
+*.pyc
+assets/skill-tool/

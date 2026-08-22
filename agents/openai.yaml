@@ -1,0 +1,8 @@
+interface:
+  display_name: "微信推文写作"
+  short_description: "Draft managed WeChat article projects from content, templates, and constraints."
+  default_prompt: "Use $wechat-article-writer to draft a managed WeChat article project from my content files, template files, and writing constraints."
+
+policy:
+  allow_implicit_invocation: true
+
