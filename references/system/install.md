@@ -2,37 +2,19 @@
 
 Use this guide when `assets/skill-tool/skill-tool.exe` is missing.
 
+Read [versioning.md](versioning.md) for the canonical skill version and repository links, then read [skill-tool.md](skill-tool.md) for the runtime layout.
+
 ## Install Rule
 
 - Do not install automatically.
 - Explain to the user that the local tool is missing.
 - Get explicit approval before downloading or writing any files.
 
-## Release Source
-
-Check the GitHub Releases page for:
-
-- repository: `Sukiet/WxArticle-Skill-Toolkit`
-- release page: `https://github.com/Sukiet/WxArticle-Skill-Toolkit/releases`
-
-Current release behavior may change over time, so inspect the newest release rather than assuming fixed assets forever.
-
 ## Pre-release Rule
 
 - If the newest release is marked as a pre-release, tell the user the exact tag.
 - Ask whether they want to install from that pre-release.
 - Only continue if the user explicitly accepts it.
-
-## Install Shape
-
-Create this runtime directory only when installation is approved:
-
-```text
-assets/
-  skill-tool/
-    skill-tool.exe
-    .env
-```
 
 ## Install Steps
 
@@ -56,4 +38,3 @@ As of 2026-08-22, the `a0.1` pre-release exposes at least:
 - `QUICKSTART.md`
 
 Do not assume this list is permanent. Always inspect the actual latest release before acting.
-

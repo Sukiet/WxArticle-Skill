@@ -2,13 +2,7 @@
 
 ## Step 1. Confirm the Workspace Directory
 
-Before article creation, inspect whether `assets/skill-tool/skill-tool.exe` exists.
-
-- If it is missing, read [install.md](install.md), explain the issue, and only install after user approval.
-- If it exists, read [update-check.md](update-check.md), run `skill-tool.exe --version`, and compare it with the newest GitHub release.
-- If the newest release is a pre-release, tell the user the exact tag and ask whether to use it.
-
-Then inspect `assets/skill-tool/.env`.
+Before article creation, inspect `assets/skill-tool/.env`.
 
 - If `WX_ARTICLE_REPO_DIR` is empty, ask the user to choose a workspace directory.
 - If it already has a value, tell the user what it is and ask whether to keep it.
@@ -21,8 +15,6 @@ The article workspace should live outside the skill package so generated project
 Change into `assets/skill-tool/`, run `skill-tool.exe init`, and store the returned `article_uuid`.
 
 Do not lose this id during the rest of the conversation.
-
-If you return to an existing article later and only know its `article_uuid`, run `skill-tool.exe work-dir -a {article_uuid}` first so you can target the right local project files.
 
 ## Step 3. Decide Whether a Template Is Needed
 
@@ -59,3 +51,4 @@ If the task mentions intermediate names like `output.local.html`, treat them as 
 - after `upload` succeeds, immediately run `preview`
 - if preview is generated and the environment supports it, show the QR code to the user or client
 - do not end the round at local file edits only; sync and preview are part of completion
+

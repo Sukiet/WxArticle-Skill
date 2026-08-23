@@ -26,8 +26,6 @@ At minimum, summarize:
 - the project directory
 - the `article_uuid`
 - whether the article uses a template
-- whether `skill-tool` had to be installed or updated during this run
-- whether the chosen version came from a stable release or a user-approved pre-release
 - whether `article.html`, `metadata.json`, and `images/` are ready
 
 ## Intermediate Naming
@@ -49,3 +47,4 @@ Preferred completion pattern:
 - `upload` completed successfully
 - `preview` completed successfully
 - QR code shown to the user or client
+

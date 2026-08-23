@@ -9,20 +9,21 @@ description: Draft and prepare WeChat article projects from user-provided conten
 
 Use this skill to produce a complete WeChat article project, not just a loose HTML draft. Treat the user's request as a combination of source content, template guidance, and non-negotiable constraints, then write the final article into the managed project created by the bundled CLI.
 
-Follow the workflow in [references/workflow.md](references/workflow.md). Read the other references only when their topic is relevant:
+Follow the workflow in [references/business/workflow.md](references/business/workflow.md). Keep business writing guidance separate from runtime and maintenance guidance. Read the other references only when their topic is relevant:
 
-- Read [references/input-contract.md](references/input-contract.md) when you need to normalize the user's delivery materials.
-- Read [references/authoring-rules.md](references/authoring-rules.md) when deciding what may be rewritten, compressed, or kept unchanged.
-- Read [references/skill-tool-cli.md](references/skill-tool-cli.md) before using the bundled CLI.
-- Read [references/install.md](references/install.md) when `skill-tool.exe` is missing and the user may approve installation.
-- Read [references/update-check.md](references/update-check.md) when checking the local version against GitHub releases.
-- Read [references/deliverables.md](references/deliverables.md) before final handoff, upload, or preview.
+- Read [references/business/input-contract.md](references/business/input-contract.md) when you need to normalize the user's delivery materials.
+- Read [references/business/authoring-rules.md](references/business/authoring-rules.md) when deciding what may be rewritten, compressed, or kept unchanged.
+- Read [references/business/deliverables.md](references/business/deliverables.md) before final handoff, upload, or preview.
+- Read [references/system/skill-tool.md](references/system/skill-tool.md) before using or discussing the bundled CLI, its repository, or its runtime layout.
+- Read [VERSION](VERSION) and [references/system/versioning.md](references/system/versioning.md) when you need the current skill version, the skill repository, or the tool repository.
+- Read [references/system/install.md](references/system/install.md) when `skill-tool.exe` is missing and the user may approve installation.
+- Read [references/system/update-check.md](references/system/update-check.md) when checking the local version against GitHub releases.
 
 ## Required Workflow
 
 1. Check whether `assets/skill-tool/skill-tool.exe` already exists.
-2. If it is missing, read [references/install.md](references/install.md), explain the situation, and get user approval before installing from GitHub Releases.
-3. If it exists, read [references/update-check.md](references/update-check.md), run `skill-tool.exe --version`, and compare it with the newest GitHub release.
+2. If it is missing, read [references/system/install.md](references/system/install.md), explain the situation, and get user approval before installing from GitHub Releases.
+3. If it exists, read [references/system/update-check.md](references/system/update-check.md), run `skill-tool.exe --version`, and compare it with the newest GitHub release.
 4. If the newest release is a pre-release, tell the user the exact tag and ask whether they want to use it before installing or updating.
 5. Confirm the article workspace location before starting content production.
 6. If `assets/skill-tool/.env` already contains `WX_ARTICLE_REPO_DIR`, do not silently trust it. Tell the user the current path and ask whether to keep it or replace it.
@@ -50,10 +51,12 @@ Follow the workflow in [references/workflow.md](references/workflow.md). Read th
 
 ## Bundled Resources
 
-- `references/install.md`
-  Install `skill-tool` from GitHub Releases after user approval.
-- `references/update-check.md`
-  Check the local `skill-tool` version against GitHub Releases and handle pre-releases carefully.
+- `references/business/`
+  Business-facing authoring, workflow, and deliverable rules for producing the WeChat article itself.
+- `references/system/`
+  Runtime-facing guidance for `skill-tool`, installation, update checks, repository links, and version metadata.
+- `VERSION`
+  Canonical single-line version source for the skill package.
 - `assets/skill-tool/`
   Runtime install location created only when the user approves installation.
 
