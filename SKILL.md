@@ -17,13 +17,13 @@ Follow the workflow in [references/business/workflow.md](references/business/wor
 - Read [references/system/skill-tool.md](references/system/skill-tool.md) before using or discussing the bundled CLI, its repository, or its runtime layout.
 - Read [VERSION](VERSION) and [references/system/versioning.md](references/system/versioning.md) when you need the current skill version, the skill repository, or the tool repository.
 - Read [references/system/install.md](references/system/install.md) when `skill-tool.exe` is missing and the user may approve installation.
-- Read [references/system/update-check.md](references/system/update-check.md) when checking the local version against GitHub releases.
+- Read [references/system/update-check.md](references/system/update-check.md) when checking the local version against GitHub releases, especially if the GitHub page looks incomplete, stale, or contradictory.
 
 ## Required Workflow
 
 1. Check whether `assets/skill-tool/skill-tool.exe` already exists.
 2. If it is missing, read [references/system/install.md](references/system/install.md), explain the situation, and get user approval before installing from GitHub Releases.
-3. If it exists, read [references/system/update-check.md](references/system/update-check.md), run `skill-tool.exe --version`, and compare it with the newest GitHub release.
+3. If it exists, read [references/system/update-check.md](references/system/update-check.md), run `skill-tool.exe --version`, and compare it with the newest GitHub release using release cross-check rules instead of trusting a single page snapshot.
 4. If the newest release is a pre-release, tell the user the exact tag and ask whether they want to use it before installing or updating.
 5. Confirm the article workspace location before starting content production.
 6. If `assets/skill-tool/.env` already contains `WX_ARTICLE_REPO_DIR`, do not silently trust it. Tell the user the current path and ask whether to keep it or replace it.
@@ -46,6 +46,7 @@ Follow the workflow in [references/business/workflow.md](references/business/wor
 - Do not choose a template on the user's behalf.
 - Do not install or update `skill-tool` until the user has explicitly approved the action.
 - Do not treat a GitHub pre-release as automatically acceptable; surface it to the user and let them decide.
+- Do not conclude "there are no releases" from a single GitHub HTML snapshot if the page is partially loaded, stale, or contradictory.
 - Treat every completed HTML or article-image edit as requiring an immediate `upload` followed by `preview`.
 - After `preview`, present the QR code to the user or client whenever the environment can display it.
 

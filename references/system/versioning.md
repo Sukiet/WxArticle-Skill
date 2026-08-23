@@ -22,6 +22,7 @@ Read the root [VERSION](../../VERSION) file first. It is the single source of tr
 - Keep version and repository information under `references/system/`, not in the business-writing references.
 - If you suspect the skill instructions are stale, compare the value in `VERSION` with the latest state in the skill repository before assuming the local package is current.
 - If you suspect the bundled tool is stale, use the skill-tool repository and its releases page together with [update-check.md](update-check.md).
+- If the GitHub releases page looks stale, empty, or partially broken, treat that as an unreliable signal and use the cross-check workflow in [update-check.md](update-check.md).
 
 ## Read Next
 

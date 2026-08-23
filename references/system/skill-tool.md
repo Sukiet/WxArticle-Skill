@@ -38,6 +38,7 @@ Rule:
 
 - `WX_ARTICLE_REPO_DIR` may be updated after user confirmation so the article workspace lives outside the skill package.
 - Sensitive future config such as access tokens should not be rotated or replaced casually during ordinary drafting work.
+- Do not inspect `skill-tool` source code just to infer the known required `.env` fields; use the documented keys in this skill unless release documentation explicitly changes them.
 
 ## Repository and Release Source
 
