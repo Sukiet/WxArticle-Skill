@@ -49,6 +49,7 @@ Follow the workflow in [references/business/workflow.md](references/business/wor
 - Do not conclude "there are no releases" from a single GitHub HTML snapshot if the page is partially loaded, stale, or contradictory.
 - Treat every completed HTML or article-image edit as requiring an immediate `upload` followed by `preview`.
 - After `preview`, present the QR code to the user or client whenever the environment can display it.
+- When showing a local QR code or local image inside Codex chat, use Markdown image syntax with an absolute path that uses forward slashes, not Windows backslashes.
 
 ## Bundled Resources
 

@@ -50,5 +50,6 @@ If the task mentions intermediate names like `output.local.html`, treat them as 
 - whenever a completed edit round changes `article.html` or article images, run `upload`
 - after `upload` succeeds, immediately run `preview`
 - if preview is generated and the environment supports it, show the QR code to the user or client
+- when rendering the local QR code in Codex chat, use Markdown image syntax with an absolute path and forward slashes such as `![qr](D:/path/to/file.png)` rather than Windows backslashes
+- if the local image still does not render in chat, provide the preview URL as the fallback instead of claiming the QR code failed to generate
 - do not end the round at local file edits only; sync and preview are part of completion
-
