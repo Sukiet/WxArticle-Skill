@@ -44,6 +44,7 @@ If the task mentions intermediate names like `output.local.html`, treat them as 
 - ensure article images live under `images/`
 - if an image exceeds the upload limit, run `compress`
 - do not alter non-content template images unless told to
+- when a publish-ready remote image URL is needed, map each uploaded article image to `{{img_host}}/image/[article_uuid]/[img_name]?t={{t:[image_name]}}`
 
 ## Step 6. Sync Every Completed Edit Round
 

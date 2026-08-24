@@ -25,7 +25,12 @@
 ## Local Versus Publish-Ready Image References
 
 - During local drafting, use the article project's `images/` directory when the workflow expects local file references.
-- If the user asks for a final publish-ready version, replace only the intended article image references with the required remote base URL plus file name.
+- If the user asks for a final publish-ready version, replace only the intended article image references with `{{img_host}}/image/[article_uuid]/[img_name]?t={{t:[image_name]}}`.
+- Keep the placeholder semantics consistent:
+  `{{img_host}}` is the template variable injected by the article server.
+  `[article_uuid]` is the managed article id that the agent must substitute.
+  `[img_name]` is the exact file name stored under the article project's `images/` directory.
+  `{{t:[image_name]}}` is the article server's cache-busting template, and the agent must substitute `[image_name]` with the concrete image file name, normally matching `[img_name]`.
 - Keep template-owned remote image URLs untouched unless the user explicitly requests otherwise.
 
 ## Metadata Rules
@@ -37,4 +42,3 @@
 - `article_uuid`: keep the initialized project id
 
 Do not edit `created_at` or `modified_at` manually unless the toolchain explicitly requires it.
-

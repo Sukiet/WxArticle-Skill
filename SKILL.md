@@ -41,7 +41,7 @@ Follow the workflow in [references/business/workflow.md](references/business/wor
 - Treat `article.html` as the canonical final content file inside the managed project, even if user examples mention names like `output.local.html` or `output.html`.
 - Preserve template structure when the user says the template is mandatory. Do not remove components, alter outer wrappers, or change spacing rules unless the user explicitly allows it.
 - Extract and place article images inside the project `images/` directory. Keep non-content template images unchanged unless the user explicitly asks to replace them.
-- Use local file references while drafting if the template or workflow expects them. Only switch to remote image URLs when the user explicitly asks for the publish-ready version.
+- Use local file references while drafting if the template or workflow expects them. When the article needs publish-ready image URLs, use the unified publish template `{{img_host}}/image/[article_uuid]/[img_name]?t={{t:[image_name]}}` after upload instead of inventing a custom remote path shape.
 - Never improvise missing factual content. If the source materials do not support a claim, either omit it or flag the gap.
 - Do not choose a template on the user's behalf.
 - Do not install or update `skill-tool` until the user has explicitly approved the action.
