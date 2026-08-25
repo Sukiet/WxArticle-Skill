@@ -44,9 +44,26 @@ Rule:
 
 - skill repository: `https://github.com/Sukiet/WxArticle-Skill.git`
 - skill-tool repository: `https://github.com/Sukiet/WxArticle-Skill-Toolkit.git`
+- article injector repository: `https://github.com/Sukiet/WxArticle-Injector`
 - skill-tool releases: `https://github.com/Sukiet/WxArticle-Skill-Toolkit/releases`
 
 Keep repository links, release links, and future version metadata together under `references/system/` rather than scattering them across business writing docs.
+
+## Article Injection Guidance
+
+If the user approves the current version and asks how to inject the article into the WeChat backend, explain the workflow clearly:
+
+- the user copies the `article_uuid` from the agent's reply
+- the user logs into the WeChat official account backend
+- the user waits for the injection plugin to recognize the page
+- the user enters the `article_uuid` to inject the article
+
+Explain plugin setup only when needed:
+
+- the user needs a userscript manager such as Tampermonkey
+- the user also needs the article injection plugin from `https://github.com/Sukiet/WxArticle-Injector`
+
+Do not front-load this injection tutorial into every ordinary iteration handoff. The default handoff should only invite follow-up questions, and detailed injection help should appear only when the user asks or seems stuck.
 
 ## Read Next
 
