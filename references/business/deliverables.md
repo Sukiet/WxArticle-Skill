@@ -54,31 +54,31 @@ After each completed iteration, the user-facing reply should include all of the 
 
 - preview link
 - preview QR code
-- visual annotation link, or `ºóĞø½«ÔÚ Lando Æ½Ì¨Ö§³Ö£¬µ±Ç°°æ±¾ÔİÎ´¿ª·Å¡£`
+- visual annotation link, or `åç»­å°†åœ¨ Lando å¹³å°æ”¯æŒï¼Œå½“å‰ç‰ˆæœ¬æš‚æœªå¼€æ”¾ã€‚`
 - `article_uuid` in a code block when the user may approve the current version
-- the exact closing sentence `Èç¹ûÄú¶Ô×¢ÈëÁ÷³Ì²»ÊìÏ¤£¬Ò²¿ÉÒÔ¼ÌĞøÎÊÎÒ£¬ÎÒ¿ÉÒÔÒ»²½Ò»²½´øÄú²Ù×÷¡£`
+- the exact closing sentence `å¦‚æœæ‚¨å¯¹æ³¨å…¥æµç¨‹ä¸ç†Ÿæ‚‰ï¼Œä¹Ÿå¯ä»¥ç»§ç»­é—®æˆ‘ï¼Œæˆ‘å¯ä»¥ä¸€æ­¥ä¸€æ­¥å¸¦æ‚¨æ“ä½œã€‚`
 
 Use this template:
 
 ````text
-Õâ´Îµü´úÒÑÍê³É£¬Äú¿ÉÒÔÏÈ²é¿´ÕâÒ»°æĞ§¹û£º
+è¿™æ¬¡è¿­ä»£å·²å®Œæˆï¼Œæ‚¨å¯ä»¥å…ˆæŸ¥çœ‹è¿™ä¸€ç‰ˆæ•ˆæœï¼š
 
-Ô¤ÀÀÁ´½Ó£º
+é¢„è§ˆé“¾æ¥ï¼š
 [preview_url]
 
-Ô¤ÀÀ¶şÎ¬Âë£º
+é¢„è§ˆäºŒç»´ç ï¼š
 [renderable_qr]
 
-¿ÉÊÓ»¯Åú×¢ĞŞ¸ÄÁ´½Ó£º
+å¯è§†åŒ–æ‰¹æ³¨ä¿®æ”¹é“¾æ¥ï¼š
 [annotation_url_or_unavailable_message]
 
-Èç¹ûÄú¾õµÃÕâ°æÃ»ÓĞÎÊÌâ£¬¿ÉÒÔµÇÂ¼Î¢ĞÅ¹«ÖÚºÅºóÌ¨½øĞĞÍÆÎÄ×¢Èë¡£ÎÄÕÂ UUID ÎÒ·ÅÔÚÏÂÃæ£¬·½±ãÄúÖ±½Ó¸´ÖÆ£º
+å¦‚æœæ‚¨è§‰å¾—è¿™ç‰ˆæ²¡æœ‰é—®é¢˜ï¼Œå¯ä»¥ç™»å½•å¾®ä¿¡å…¬ä¼—å·åå°è¿›è¡Œæ¨æ–‡æ³¨å…¥ã€‚æ–‡ç«  UUID æˆ‘æ”¾åœ¨ä¸‹é¢ï¼Œæ–¹ä¾¿æ‚¨ç›´æ¥å¤åˆ¶ï¼š
 
 ```text
 [article_uuid]
 ```
 
-Èç¹ûÄú¶Ô×¢ÈëÁ÷³Ì²»ÊìÏ¤£¬Ò²¿ÉÒÔ¼ÌĞøÎÊÎÒ£¬ÎÒ¿ÉÒÔÒ»²½Ò»²½´øÄú²Ù×÷¡£
+å¦‚æœæ‚¨å¯¹æ³¨å…¥æµç¨‹ä¸ç†Ÿæ‚‰ï¼Œä¹Ÿå¯ä»¥ç»§ç»­é—®æˆ‘ï¼Œæˆ‘å¯ä»¥ä¸€æ­¥ä¸€æ­¥å¸¦æ‚¨æ“ä½œã€‚
 ````
 
 Do not automatically explain the injection steps, plugin installation, or backend workflow in this default handoff. Expand only when the user asks or appears blocked.

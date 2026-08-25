@@ -54,7 +54,7 @@ If the task mentions intermediate names like `output.local.html`, treat them as 
 - in the user-facing handoff for each completed iteration, include the preview link, the preview QR code, and the visual annotation link
 - if the visual annotation link is not available yet, say that it will be supported later on the Lando platform instead of omitting it
 - when the user may approve the current version, put `article_uuid` in a code block
-- end the iteration handoff with exactly this one sentence unless the user asks for more help with injection: `如果您对注入流程不熟悉，也可以继续问我，我可以一步一步带您操作。`
+- end the iteration handoff with exactly this one sentence unless the user asks for more help with injection: `濡傛灉鎮ㄥ娉ㄥ叆娴佺▼涓嶇啛鎮夛紝涔熷彲浠ョ户缁棶鎴戯紝鎴戝彲浠ヤ竴姝ヤ竴姝ュ甫鎮ㄦ搷浣溿�俙
 - when rendering the local QR code in Codex chat, use Markdown image syntax with an absolute path and forward slashes such as `![qr](D:/path/to/file.png)` rather than Windows backslashes
 - if the local image still does not render in chat, provide the preview URL as the fallback instead of claiming the QR code failed to generate
 - do not end the round at local file edits only; sync and preview are part of completion

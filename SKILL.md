@@ -50,7 +50,7 @@ Follow the workflow in [references/business/workflow.md](references/business/wor
 - Treat every completed HTML or article-image edit as requiring an immediate `upload` followed by `preview`.
 - After `preview`, present the QR code to the user or client whenever the environment can display it.
 - After each completed iteration, include the preview link, preview QR code, and the visual annotation link in the user-facing handoff. If the annotation link is not available yet, say so plainly instead of omitting it.
-- When the user may approve the current version, place `article_uuid` in a code block and keep the closing guidance to this single sentence unless the user asks for more detail: `如果您对注入流程不熟悉，也可以继续问我，我可以一步一步带您操作。`
+- When the user may approve the current version, place `article_uuid` in a code block and keep the closing guidance to this single sentence unless the user asks for more detail: `濡傛灉鎮ㄥ娉ㄥ叆娴佺▼涓嶇啛鎮夛紝涔熷彲浠ョ户缁棶鎴戯紝鎴戝彲浠ヤ竴姝ヤ竴姝ュ甫鎮ㄦ搷浣溿�俙
 - When showing a local QR code or local image inside Codex chat, use Markdown image syntax with an absolute path that uses forward slashes, not Windows backslashes.
 
 ## Bundled Resources
