@@ -7,7 +7,7 @@ Read the root [VERSION](../../VERSION) file first. It is the single source of tr
 ## Current Skill Version Source
 
 - local version source: `VERSION`
-- current local version at the time this file was updated: `a0.1`
+- current local version at the time this file was updated: `a0.2`
 
 ## Canonical Repositories
 
